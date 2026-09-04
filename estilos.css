@@ -1,0 +1,33 @@
+/*CSS DOCUMENT*/
+@charset "UTF-8";
+
+/*configuraciones generales*/
+@font-face {
+    font-family: "Literata italic";
+    src: url(fonts/Literata-Italic.ttf) format(truetype);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Literata black";
+    src: url(fonts/Literata-Black.ttf) format(truetype);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sincopa";
+    src: url(fonts/Sincopa\ Ella.otf) format(truetype); 
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/*aplicaciones*/
+h1 {
+    font-family: 'Sincopa', sans-serif;
+}
