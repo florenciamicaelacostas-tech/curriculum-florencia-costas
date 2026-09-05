@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: "Sincopa";
-    src: url(fonts/Sincopa\ Ella.otf) format(truetype); 
+    src: url(fonts/Sincopa\ Ella.otf) format(truetype); /*este no es truetype, fijate la extensión del archivo*/
     font-weight: 900;
     font-style: normal;
 }
