@@ -3,31 +3,37 @@
 
 /*configuraciones generales*/
 @font-face {
-    font-family: "Literata italic";
-    src: url(fonts/Literata-Italic.ttf) format(truetype);
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Literata black";
-    src: url(fonts/Literata-Black.ttf) format(truetype);
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
     font-family: "Sincopa";
     src: url(fonts/Sincopa\ Ella.otf) format(truetype); 
     font-weight: 900;
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Sincopa nina";
+    src: url(fonts/Sincopa\ Nina.otf) format(truetype);
+    font-weight: 600;
+    font-style: normal;
+}
+
 * {
     font-family: "Source Sans 3", sans-serif;
+    background-color: rgb(234, 173, 191);
 }
 
 /*aplicaciones*/
 h1 {
     font-family: 'Sincopa', sans-serif;
+    color: rgb(44, 21, 175); 
+    font-size: 70px;
+}
+
+h2 {
+    font-family: 'Sincopa', sans-serif;
+    color: rgb(226, 6, 28);
+    font-size: 37px;
+}
+
+h3 {
+    color: rgb(44, 21, 175);
 }
