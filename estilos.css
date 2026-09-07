@@ -9,17 +9,11 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Sincopa nina";
-    src: url(fonts/Sincopa\ Nina.otf) format(truetype);
-    font-weight: 600;
-    font-style: normal;
-}
-
-* {
+body {
     font-family: "Source Sans 3", sans-serif;
     background-color: rgb(234, 173, 191);
-    padding: 30px 30px;
+    margin: 0;
+    padding: 5px 10px;
     line-height: 1;
 }
 
@@ -32,29 +26,25 @@ p {
 h1 {
     font-family: 'Sincopa', sans-serif;
     color: rgb(44, 21, 175);
-    font-size: 70px;
+    font-size: 100px;
     text-align: center;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 3px;
+    margin-top: 150px;
 }
 
 h2 {
     font-family: 'Sincopa', sans-serif;
     color: rgb(226, 6, 28);
-    font-size: 37px;
+    font-size: 45px;
     text-align: center;
 }
 
-h3 {
-    color: rgb(44, 21, 175);
-}
-
-.miinicio {
+.inicio {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     margin: 0;
@@ -67,6 +57,7 @@ h3 {
     display: flex;
     align-items: center;
     gap: 18px;
+    padding: 0;
 }
 
 .barra a {
@@ -74,7 +65,8 @@ h3 {
     border: 2.8px solid rgb(226, 6, 28);
     border-radius: 100px;
     padding: 8px 16px;
-    font-family: 'Sincopa', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: bold;
     color: rgb(226, 6, 28);
 }
 
@@ -91,21 +83,139 @@ h3 {
     justify-content: center;
 }
 
-.yo {
+.sobre-mi {
     padding-left: 180px;
     padding-right: 100px;
     display: flex;
-    column-gap: -10px;
-    justify-content: center;
-    margin-bottom: 80px;
+    column-gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 205px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(226, 6, 28);
 }
 
-.yocolumna {
-    width: 500px;
+.soy {
+    width: 300px;
 }
 
-h1, h2 {
-    margin-bottom: -25px;
-    margin-top: 20px;
+.soy:last-child {
+    width: 600px;
+}
+
+.soy p {
+    font-size: 18px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 500;
+    color: rgb(246, 242, 232);
+}
+
+.sobre-mi h3 {
+    color: rgb(246, 242, 232);
+    border-bottom: 2px solid rgb(246, 242, 232);
+}
+
+h1,
+h2 {
+    margin-bottom: 0;
     justify-content: center;
+}
+
+h3 {
+    font-family: 'Sincopa', sans-serif;
+    color: rgb(226, 6, 28);
+    font-size: 30px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid rgb(226, 6, 28);
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(44, 21, 175);
+}
+
+.formacion {
+    margin: 30px 100px;
+}
+
+.experiencia {
+    margin: 100px 100px;
+}
+
+.experiencia>h3 {
+    text-align: left;
+}
+
+.exp-item {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 60px;
+}
+
+.exp-titulo {
+    width: 35%;
+}
+
+.exp-descripcion {
+    width: 65%;
+}
+
+.exp-descripcion ul {
+    list-style: none;
+    margin-top: 0;
+}
+
+.exp-descripcion li {
+    margin-bottom: 12px;
+    color: rgb(44, 21, 175);
+    font-size: 18px;
+}
+
+.exp-descripcion li::before {
+    content: "✿";
+    margin-right: 10px;
+    color: rgb(44, 21, 175);
+}
+
+.formacion p,
+.experiencia p {
+    font-size: 15px;
+    color: rgb(44, 21, 175);
+}
+
+.conocimientos {
+    margin: 100px 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: rgb(44, 21, 175);
+}
+
+footer p {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(234, 173, 191);
+    margin: 0;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none
+}
+
+.redes p {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(234, 173, 191);
 }
