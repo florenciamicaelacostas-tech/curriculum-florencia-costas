@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Florencia Costas</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+        <img src="img/flor-blanca.gif" alt="Volver al inicio" width="60">
+        </a>
+        <nav class="navegador">
+            <a href="curriculum.html"> Curriculum</a>
+            <a href="portfolio.html"> Potfolio</a>
+            <a href="contacto.html"> Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contactame">
+            <div class="titulo-contacto">
+                <h1>Contactame!</h1>
+                <h2>y trabajamos juntxs</h2>
+            </div>
+
+            <form class="formulario" method="post" action="" target="_blank" enctype="text/plain">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="Nombre" id="Nombre" maxlength="25" placeholder="Ej: Florencia Costas"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" id="Email" placeholder="tu_email1234@gmail.com" required>
+                </div>
+
+                <div class="campo">
+                    <label form="mensaje">Mensaje:</label>
+                    <textarea id="Mensaje" name="Mensaje"></textarea>
+                </div>
+
+                <p class="titulo-proyecto">Tipo de proyecto:</p>
+                <div class="opciones-proyecto">
+                    <label>Diseño editorial <input type="checkbox" name="Proyecto" value="Editorial"></label>
+                    <label>Identidad visual <input type="checkbox" name="Proyecto" value="Identidad-visual"></label>
+                    <label>Afiches <input type="checkbox" name="Proyecto" value="Afiches"></label>
+                    <label>Otro <input type="checkbox" name="Proyecto" value="Otro"></label>
+                </div>
+                <button type="submit" class="boton-enviar">
+                    Enviar mensaje
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Guernica, Pdte. Perón, Buenos Aires</p>
+        <div class="redes">
+            <p>Mis redes sociales</p>
+            <ul class="redes">
+                <li>
+                    <a href="https://www.instagram.com/florrcostas/" target="_blank">
+                        <img src="img/instagram.png" alt="instagram" width="40">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/florenciacostas" target="_blank">
+                        <img src="img/behance.png" alt="Behance" width="40">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>

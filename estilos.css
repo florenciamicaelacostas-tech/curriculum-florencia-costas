@@ -9,24 +9,114 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Source Sans 3", sans-serif;
-    background-color: rgb(234, 173, 191);
+    background-color: #ffcfed;
+    margin: 0%;
+}
+
+/*CONFIGURANDO EL HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5px 70px;
+    background-color: #C4D5F1;
+}
+
+.navegador {
+    display: flex;
+    gap: 40px;
+}
+
+.navegador a {
+    text-decoration: none;
+    border: 2.8px solid #641A33;
+    border-radius: 100px;
+    padding: 3px 8px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: bold;
+    color: #641A33;
+}
+
+.navegador a:hover {
+    background-color: #641A33;
+    color: #C4D5F1;
+}
+
+/*ACA EMPIEZA EL MAIN*/
+
+.texto-presentacion {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 60px;
+
+
+    /*Este es el fondo de la presentacion*/
+
+    background-color: #ffcfed;
+    background-image:
+        linear-gradient(rgb(100, 26, 51, 0.20)1px, transparent 1px),
+        linear-gradient(90deg, rgb(100, 26, 51, 0.20) 1px, transparent 1px);
+    background-size: 60px 60px;
+}
+
+.texto-presentacion h1 {
+    font-family: 'Sincopa', sans-serif;
+    color: #641A33;
+    font-size: 80px;
+    margin: 0 0 10px 0;
+}
+
+.texto-presentacion h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: normal;
+    color: #641A33;
+    font-size: 30px;
     margin: 0;
-    padding: 5px 10px;
-    line-height: 1;
 }
 
-p {
-    line-height: 1.7;
-    font-size: 13px;
+.mi-info h3 {
+    font-family: 'Sincopa', sans-serif;
+    color: #641A33;
+    font-size: 25px;
+    border-bottom: 1px solid #641A33;
 }
 
-/*aplicaciones*/
+.estampillas {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 0 0px 100px;
+}
+
+.mi-info {
+    padding: 30px 70px 0;
+    background-color: #F6F2E7;
+}
+
+/*Configurando CURRICULUM*/
+
 h1 {
     font-family: 'Sincopa', sans-serif;
-    color: rgb(44, 21, 175);
-    font-size: 100px;
+    color: #641A33;
+    font-size: 80px;
     text-align: center;
     text-decoration-thickness: 3px;
     text-underline-offset: 3px;
@@ -35,45 +125,9 @@ h1 {
 
 h2 {
     font-family: 'Sincopa', sans-serif;
-    color: rgb(226, 6, 28);
-    font-size: 45px;
+    color: #641A33;
+    font-size: 30px;
     text-align: center;
-}
-
-.inicio {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 10px 20px;
-    height: 60px;
-    box-sizing: border-box;
-}
-
-.barra {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    padding: 0;
-}
-
-.barra a {
-    text-decoration: none;
-    border: 2.8px solid rgb(226, 6, 28);
-    border-radius: 100px;
-    padding: 8px 16px;
-    font-family: 'Source Sans 3', sans-serif;
-    font-weight: bold;
-    color: rgb(226, 6, 28);
-}
-
-.barra a:hover {
-    background-color: rgb(226, 6, 28);
-    color: rgb(234, 173, 191);
-    box-shadow: 0 0 15px rgb(226, 6, 28);
 }
 
 .herramientas {
@@ -94,7 +148,7 @@ h2 {
     margin-top: 205px;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: rgb(226, 6, 28);
+    background-color: #C4D5F1;
 }
 
 .soy {
@@ -109,12 +163,12 @@ h2 {
     font-size: 18px;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 500;
-    color: rgb(246, 242, 232);
+    color: #641A33;
 }
 
 .sobre-mi h3 {
-    color: rgb(246, 242, 232);
-    border-bottom: 2px solid rgb(246, 242, 232);
+    color: #641A33;
+    border-bottom: 2px solid #641A33;
 }
 
 h1,
@@ -125,10 +179,10 @@ h2 {
 
 h3 {
     font-family: 'Sincopa', sans-serif;
-    color: rgb(226, 6, 28);
+    color: #641A33;
     font-size: 30px;
     margin-bottom: 50px;
-    border-bottom: 2px solid rgb(226, 6, 28);
+    border-bottom: 2px solid #641A33;
 }
 
 h4 {
@@ -136,7 +190,7 @@ h4 {
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: bold;
-    color: rgb(44, 21, 175);
+    color: #641A33;
 }
 
 .formacion {
@@ -172,38 +226,135 @@ h4 {
 
 .exp-descripcion li {
     margin-bottom: 12px;
-    color: rgb(44, 21, 175);
+    color: #641A33;
     font-size: 18px;
 }
 
 .exp-descripcion li::before {
     content: "✿";
     margin-right: 10px;
-    color: rgb(44, 21, 175);
+    color: #641A33;
 }
 
 .formacion p,
 .experiencia p {
     font-size: 15px;
-    color: rgb(44, 21, 175);
+    color: #641A33;
 }
 
 .conocimientos {
     margin: 100px 100px;
 }
 
+
+/*Configurando PORTFOLIO*/
+
+
+/*Configurando CONTACTO*/
+
+.contactame {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding: 0 8%;
+    min-height: 600px;
+
+    /*Este es el fondo de CONTACTO*/
+
+    background-color: #F6F2E7;
+    background-image: linear-gradient(rgb(100, 26, 51, 0.20)1px, transparent 1px),
+        linear-gradient(90deg, rgb(100, 26, 51, 0.20) 1px, transparent 1px);
+    background-size: 60px 60px;
+}
+
+
+.titulo-contacto {
+    text-align: right;
+}
+
+.titulo-contacto h1 {
+    font-family: 'Sincopa', sans-serif;
+    font-size: 80px;
+    color: #641A33;
+    margin: 0 0 8px 0;
+}
+
+.titulo-contacto h2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: #641A33;
+    margin: 0;
+}
+
+/*Configurando FORMULARIO*/
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 480px;
+    padding: 25px;
+    background-color: #facce9;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #641A33;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 5px;
+    font-family: "Source Sans 3", sans-serif;
+    color: #641A33;
+}
+
+.campo textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+.formulario label,
+.titulo-proyecto {
+    color: #641A33;
+}
+
+.opciones-protecto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.titulo-proyecto {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+}
+
+
+/*ACA EMPIEZA EL FOOTER*/
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
-    background-color: rgb(44, 21, 175);
+    background-color: #641A33;
+    padding: 25px 70px;
 }
 
 footer p {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    color: rgb(234, 173, 191);
+    color: #ffcfed;
     margin: 0;
 }
 
@@ -216,6 +367,6 @@ footer p {
 
 .redes p {
     font-weight: bold;
-    font-size: 25px;
-    color: rgb(234, 173, 191);
+    font-size: 20px;
+    color: #ffcfed;
 }
