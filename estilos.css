@@ -22,6 +22,11 @@ body {
 /*CONFIGURANDO EL HEADER*/
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +56,31 @@ header {
     color: #C4D5F1;
 }
 
+/*HEADER Y NAV PARA CELULARES*/
+
+@media screen and (max-width: 500px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navegador {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navegador a {
+        font-size: 12px;
+    }
+}
+
 /*ACA EMPIEZA EL MAIN*/
+
+main {
+    padding-top: 65px;
+}
 
 .texto-presentacion {
     display: flex;
@@ -78,7 +107,7 @@ header {
 
 .texto-presentacion h1 {
     font-family: 'Sincopa', sans-serif;
-    color: #641A33;
+    color: #641a33;
     font-size: 80px;
     margin: 0 0 10px 0;
 }
@@ -100,10 +129,40 @@ header {
 
 .estampillas {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     gap: 20px;
-    padding: 0 0px 100px;
+    padding: 0 0 50px;
+}
+
+.estampilla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 150px;
+    min-width: 0;
+    text-align: center;
+}
+
+.estampilla img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+}
+
+.descripcion {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    color: #641A33;
+    margin-top: 12px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.estampilla:hover .descripcion {
+    opacity: 1;
 }
 
 .mi-info {
@@ -111,7 +170,59 @@ header {
     background-color: #F6F2E7;
 }
 
-/*Configurando CURRICULUM*/
+.mi-portfolio h3 {
+    font-family: 'Sincopa', sans-serif;
+    color: #641A33;
+    font-size: 25px;
+    border-bottom: 1px solid #641A33;
+}
+
+.mi-portfolio {
+    padding: 30px 70px 30px;
+    background-color: #C4D5F1
+}
+
+.tarjeta-portfolio {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.tarjeta-portfolio img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.capa-portfolio {
+    position: absolute;
+    inset: 0;
+    background-color: rgb(101, 26, 51, 0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 25px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.capa-portfolio h4 {
+    font-family: 'Sincopa', sans-serif;
+    font-size: 40px;
+    color: #F6F2E7;
+    margin: 0;
+}
+
+.tarjeta-portfolio:hover .capa-portfolio {
+    opacity: 1;
+}
+
+/*Configuracion del CURRICULUM del TP1*/
 
 h1 {
     font-family: 'Sincopa', sans-serif;
@@ -148,7 +259,7 @@ h2 {
     margin-top: 205px;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #C4D5F1;
+    background-color: rgb(196, 213, 241);
 }
 
 .soy {
@@ -249,6 +360,22 @@ h4 {
 
 /*Configurando PORTFOLIO*/
 
+.portfolio-pres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 0px 0px;
+    margin: 0;
+
+    /*Este es el fondo del portfolio*/
+
+    background-color:#F6F2E7;
+    background-image:
+        linear-gradient(rgba(196, 213, 241, 0.5)1px, transparent 1px),
+        linear-gradient(90deg, rgb(196, 213, 241, 0.50) 1px, transparent 1px);
+    background-size: 60px 60px;
+
+}
 
 /*Configurando CONTACTO*/
 
