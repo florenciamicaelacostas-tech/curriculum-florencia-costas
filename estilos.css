@@ -19,7 +19,7 @@ body {
     margin: 0%;
 }
 
-/*CONFIGURANDO EL HEADER*/
+/*Estilos para el HEADER*/
 
 header {
     position: fixed;
@@ -81,6 +81,9 @@ header {
 main {
     padding-top: 65px;
 }
+
+
+/*Estilos para el INDEX*/
 
 .texto-presentacion {
     display: flex;
@@ -222,7 +225,7 @@ main {
     opacity: 1;
 }
 
-/*Configuracion del CURRICULUM del TP1*/
+/*Estilos para CURRICULUM del TP1*/
 
 h1 {
     font-family: 'Sincopa', sans-serif;
@@ -249,24 +252,16 @@ h2 {
 }
 
 .sobre-mi {
-    padding-left: 180px;
-    padding-right: 100px;
     display: flex;
-    column-gap: 30px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
+    padding: 60px 100px;
     margin-bottom: 100px;
-    margin-top: 205px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: rgb(196, 213, 241);
+    background-color: #F6F2E7;
 }
 
 .soy {
-    width: 300px;
-}
-
-.soy:last-child {
     width: 600px;
 }
 
@@ -279,21 +274,47 @@ h2 {
 
 .sobre-mi h3 {
     color: #641A33;
-    border-bottom: 2px solid #641A33;
+    border-bottom: 1px solid #641A33;
+}
+
+.titulo-cv {
+    padding: 100px;
+    min-height: 550px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 42px;
+
+    /*Fondo*/
+    background-image:
+        linear-gradient(rgb(100, 26, 51, 0.20)1px, transparent 1px),
+        linear-gradient(90deg, rgb(100, 26, 51, 0.20) 1px, transparent 1px);
+    background-size: 60px 60px;
 }
 
 h1,
 h2 {
-    margin-bottom: 0;
     justify-content: center;
+}
+
+.titulo-cv h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.titulo-cv h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-family: 'Sincopa', sans-serif;
     color: #641A33;
     font-size: 30px;
-    margin-bottom: 50px;
-    border-bottom: 2px solid #641A33;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #641A33;
 }
 
 h4 {
@@ -358,36 +379,124 @@ h4 {
 }
 
 
-/*Configurando PORTFOLIO*/
+/*Estilos para PORTFOLIO*/
 
 .portfolio-pres {
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 30px 0px 0px;
-    margin: 0;
+    box-sizing: border-box;
+    padding: 20px 30px 100px 0px;
 
-    /*Este es el fondo del portfolio*/
+    /*Este es el fondo*/
 
-    background-color:#F6F2E7;
+    background-color: #F6F2E7;
     background-image:
-        linear-gradient(rgba(196, 213, 241, 0.5)1px, transparent 1px),
-        linear-gradient(90deg, rgb(196, 213, 241, 0.50) 1px, transparent 1px);
+        linear-gradient(rgba(196, 213, 241, 0.3) 25px, transparent 1px),
+        linear-gradient(90deg, rgb(196, 213, 241, 0.3) 25px, transparent 1px);
     background-size: 60px 60px;
+    background-position: 0 25px, 0 0;
 
 }
 
-/*Configurando CONTACTO*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+    gap: 30px;
+    padding: 100px;
+    padding-top: 80px;
+}
+
+.titulo-galeria h3 {
+    font-family: 'Sincopa', sans-serif;
+    color: #641A33;
+    font-size: 25px;
+    border-bottom: 1px solid #641A33;
+    margin: 0px 70px;
+    margin-top: 80px;
+}
+
+.proyecto img {
+    width: 200px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.proyecto img:hover {
+    transform: scale(1.08);
+}
+
+.proyecto {
+    overflow: hidden;
+}
+
+.boton-volver {
+    display: inline-block;
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    z-index: 1000;
+    text-decoration: none;
+    border: 2.8px solid #641A33;
+    border-radius: 100px;
+    padding: 6px 15px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: bold;
+    color: #641A33;
+}
+
+.detalle-proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.detalle-proyecto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.detalle-proyecto h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #641A33;
+    margin: 20px 0 0;
+}
+
+.detalle-proyecto p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    color: #641A33;
+    margin: 4px 0 0;
+}
+
+.boton-volver:hover {
+    background-color: #641A33;
+    color: #ffcfed;
+    ;
+}
+
+.pagina-proyecto {
+    padding: 0px;
+}
+
+/*Estilos para CONTACTO*/
 
 .contactame {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 50px;
-    padding: 0 8%;
-    min-height: 600px;
+    padding: 0px 8%;
+    min-height: 594px;
 
-    /*Este es el fondo de CONTACTO*/
+    /*Este es el fondo*/
 
     background-color: #F6F2E7;
     background-image: linear-gradient(rgb(100, 26, 51, 0.20)1px, transparent 1px),
@@ -415,7 +524,13 @@ h4 {
     margin: 0;
 }
 
-/*Configurando FORMULARIO*/
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #641A33;
+    opacity: 0.5;
+}
+
+/*Estilos para FORMULARIO*/
 
 .formulario {
     display: flex;
@@ -424,6 +539,7 @@ h4 {
     width: 480px;
     padding: 25px;
     background-color: #facce9;
+    align-self: flex-start;
 }
 
 .campo {
@@ -456,20 +572,84 @@ h4 {
     color: #641A33;
 }
 
-.opciones-protecto {
+.opciones-proyecto {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    column-gap: 50px;
+    gap: 20px;
+    margin-bottom: 15px;
 }
 
 .titulo-proyecto {
     font-family: "Source Sans 3", sans-serif;
     font-weight: bold;
+    margin-bottom: 0;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline-color: #641A33;
+}
+
+.opciones-proyecto input[type="checkbox"] {
+    accent-color: #641A33;
+}
+
+.boton-enviar {
+    background-color: transparent;
+    border: 2px solid #641A33;
+    border-radius: 100px;
+    padding: 8px 20px;
+    color: #641A33;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #641A33;
+    color: #facce9;
+}
+
+.opciones-proyecto input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid #641A33;
+    border-radius: 3px;
+    background-color: #facce9;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+}
+
+.opciones-proyecto input[type="checkbox"]:checked {
+    background-color: #641A33;
+}
+
+.opciones-proyecto input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: #facce9;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    left: 2px;
+    top: -2px;
+}
+
+.opciones-proyecto label {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
 }
 
 
+
 /*ACA EMPIEZA EL FOOTER*/
+
 footer {
     display: flex;
     justify-content: space-between;
