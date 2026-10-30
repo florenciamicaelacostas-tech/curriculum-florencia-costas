@@ -11,3 +11,7 @@ Se utilizó Visual Studio Code
 
 Proceso:
 Fue un gran desafío poder realizar este tp, pero estoy muy conforme con el resultado. Costó, si, pero siento que lo llevé mejor que la primera parte. Lo que mas me costó en esa etapa es realizar la galería ya que era linkear muchos html; intenté realizar todas estas cosas en JavaScript pero como verán, no pude. Pero estoy contenta con el resultado.
+
+Link a figma:
+https://www.figma.com/design/JRqbBc5wkmFWS9ZzC3ay3L/compu3_tp_portfolio?node-id=72-20&t=KGW6mNIIps6JzVLb-1
+
